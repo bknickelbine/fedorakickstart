@@ -1,0 +1,22 @@
+{
+    "auto_install":[
+        {
+            "parent": "/Fedora",
+            "template":[
+                "/script/ks2.cfg"
+            ]
+        }
+    ],
+    "conf_replace":[
+        {
+            "iso": "/Fedora/Fedora-Everything-netinst-x86_64-38_Beta-1.3_VTNORMAL.iso",
+            "org": "/boot/grub2/grub.cfg",
+            "new": "/script/bootgrub2_grub.cfg"
+        },
+        {
+            "iso": "/Fedora/Fedora-Everything-netinst-x86_64-38_Beta-1.3_VTNORMAL.iso",
+            "org": "/EFI/BOOT/grub.cfg",
+            "new": "/script/efiboot_grub.cfg"
+        }
+    ]
+}
