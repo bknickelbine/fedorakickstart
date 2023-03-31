@@ -1,4 +1,8 @@
 {
+    "control":[
+        { "VTOY_MENU_TIMEOUT": "1" },
+        { "VTOY_DEFAULT_IMAGE": "/Fedora/Fedora-Everything-netinst-x86_64-38_Beta-1.3_VTNORMAL.iso" }
+    ],
     "auto_install":[
         {
             "parent": "/Fedora",
