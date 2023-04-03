@@ -1,4 +1,4 @@
-# Files for making a Fedora 38 automatic installer using Ventoy
+# Files for making a Fedora 38 KDE automatic installer using Ventoy
 
 Configuration files to:
 - Boot the Fedora-Everything-netinst-x86_64-38_Beta-1.3_VTNORMAL.iso from a /Fedora directory on the Ventoy flash drive
