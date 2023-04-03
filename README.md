@@ -8,4 +8,4 @@ Configuration files to:
 
 
 - Place the bootgrub2_grub.cfg, efiboot_grub.cfg, and ks2.cfg in a directory called /script on the Ventoy flash drive. Place the ventoy.json file in the /ventoy directory.
-### This configuration is meant to facilitate easier OS deployment before device turn in needing any bootable OS. It is not meant to be used as-is for normal deployment scenarios. However, the kickstart configuration file could be modified to suit your specific needs.
+### This configuration is meant to facilitate easier OS deployment before device turn in needing any bootable OS. It is not meant to be used as-is for normal deployment scenarios. Almost all non-critical packages have been removed from the installation, and it uses a mirror that provides fast downloads for our environment. However, the kickstart configuration file could be modified to suit your specific needs.
