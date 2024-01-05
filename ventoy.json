@@ -1,22 +1,18 @@
 {
-    "control": [
-        {
-            "VTOY_MENU_TIMEOUT": "1"
-        },
-        {
-            "VTOY_DEFAULT_IMAGE": "/Fedora/Fedora-Everything-netinst-x86_64-38-1.6_VTNORMAL.iso"
-        }
+    "control":[
+        { "VTOY_MENU_TIMEOUT": "1" },
+        { "VTOY_DEFAULT_IMAGE": "/Fedora/Fedora-Everything-netinst-x86_64-39-1.5_VTNORMAL.iso" }
     ],
-    "auto_install": [
+    "auto_install":[
         {
             "parent": "/Fedora",
-            "template": [
+            "template":[
                 "/script/ks2.cfg"
             ],
             "autosel": 1
         }
     ],
-    "conf_replace": [
+    "conf_replace":[
         {
             "iso": "/Fedora/Fedora-Everything-netinst-x86_64-38-1.6_VTNORMAL.iso",
             "org": "/boot/grub2/grub.cfg",
@@ -24,6 +20,16 @@
         },
         {
             "iso": "/Fedora/Fedora-Everything-netinst-x86_64-38-1.6_VTNORMAL.iso",
+            "org": "/EFI/BOOT/grub.cfg",
+            "new": "/script/efiboot_grub.cfg"
+        },
+        {
+            "iso": "/Fedora/Fedora-Everything-netinst-x86_64-39-1.5_VTNORMAL.iso",
+            "org": "/boot/grub2/grub.cfg",
+            "new": "/script/bootgrub2_grub.cfg"
+        },
+        {
+            "iso": "/Fedora/Fedora-Everything-netinst-x86_64-39-1.5_VTNORMAL.iso",
             "org": "/EFI/BOOT/grub.cfg",
             "new": "/script/efiboot_grub.cfg"
         }
